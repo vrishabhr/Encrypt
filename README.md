@@ -10,5 +10,7 @@ Only a password for the KeyStore is required when executing the script.
 
 First, compile the .java file by executing `javac fileEncrypt.java`
 
-Three parameters are expected : file path, password for the keystore, and type of operation (`e` for encryption and `d` for decryption). Which results in :
-`java fileEncrypt 'path to file' 'keystore password' 'operation'`
+Three parameters are expected : file path, and type of operation (`e` for encryption and `d` for decryption). Which results in :
+`java fileEncrypt 'path to file' 'operation'`
+
+A KeyStore password will now be requested, which must be entered into the console.
