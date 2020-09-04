@@ -60,12 +60,21 @@ public class fileEncrypt {
 
     public static void main(String args[]) throws IOException, Exception {
         
+        if(args.length != 2){
+            System.err.println("Missing filepath or operation!");
+            System.exit(1);
+        }
+
         try{
             File file = new File(args[0]);
+            
+            Console cons = System.console();
 
-            String key = args[1];
-            char[] password = key.toCharArray();
-            String op = args[2];
+            char[] password = cons.readPassword("[%s]", "Enter Password:");
+            if(cons != null && password != null){
+                System.out.println("Accepted");
+            }
+            String op = args[1];
             String filepath = "data.keystore";
 
             // Reading data into the inputFile byte Array.
