@@ -13,4 +13,4 @@ First, compile the .java file by executing `javac fileEncrypt.java`
 Three parameters are expected : file path, and type of operation (`e` for encryption and `d` for decryption). Which results in :
 `java fileEncrypt 'path to file' 'operation'`
 
-A KeyStore password will now be requested, which must be entered into the console.
+A `KeyStore` password will now be requested, which must be entered into the console.
